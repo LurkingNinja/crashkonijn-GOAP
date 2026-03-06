@@ -45,7 +45,7 @@ namespace CrashKonijn.Goap.Runtime
 
         public ILocalWorldData WorldData { get; } = new LocalWorldData();
         public IGoapAgentEvents Events { get; } = new GoapAgentEvents();
-        public ILogger<IMonoGoapActionProvider> Logger { get; } = new GoapAgentLogger();
+        public ILogger<IMonoGoapActionProvider> Logger { get; set; } = new GoapAgentLogger();
 
         public Vector3 Position => this.transform.position;
 
